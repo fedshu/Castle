@@ -260,7 +260,7 @@ nav .overlay ul {
 .main_text h1 {
     text-transform: uppercase;
     letter-spacing: 5px;
-    margin-right: -5px;
+    margin: 0 auto;
     font-size: 2.6rem;
     line-height: 1;
     position: relative;
@@ -299,7 +299,7 @@ nav .overlay ul {
     border: 2px solid var(--main-font-color);
     padding: 0.3rem 2.3rem 0rem 2.3rem;
     letter-spacing: 3px;
-    margin-right: -3px;
+    margin: 0 auto;
     position: relative;
     margin-top: 3rem;
 }
@@ -426,7 +426,7 @@ nav .overlay ul {
 footer {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     text-align: center;
     background-color: var(--main-footer-bg-color);
     padding: 5rem 0;
@@ -586,5 +586,10 @@ footer p {
         100% {
             opacity: 1;
         }
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+
     }
 }
