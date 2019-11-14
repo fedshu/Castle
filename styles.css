@@ -9,8 +9,9 @@
 
 html {
     font-size: 14px;
-    font-family: "Gabriola", sans-serif;
+    font-family: als_sector ,Arial,sans-serif;
     scroll-behavior: smooth;
+    min-width: 1000px;
 }
 
 :root {
@@ -26,8 +27,8 @@ section {
 
 p {
     line-height: 1.5;
-    font-size: 1.8rem;
-    font-weight: 300;
+    font-size: 1.7rem;
+    font-weight: 400;
     color: var(--main-font-dark-gray);
 }
 
@@ -46,7 +47,7 @@ a {
 
 .btn_info {
     font-size: 1.2rem;
-    padding: 1rem 1rem 0.4rem 1rem;
+    padding: 0.7em 1rem 1rem 1rem;
     color: var(--main-font-color);
     border-bottom: 2px solid var(--main-font-color);
     margin: 2rem 0 4rem 0;
@@ -57,34 +58,20 @@ a {
     color: var(--main-white);
 }
 
-.element_1_custom_font {
-    color: var(--main-font-color);
-    font-size: 6.5rem;
-    font-weight: 100;
-}
 
-.element_1_custom_font_secondary {
+
+.custom_font_secondary {
     width: 90%;
     margin: 0 auto;
-    line-height: 1;
-    font-size: 2.3rem;
-    font-weight: 300;
+    line-height: 1.5;
+    font-size: 1.7rem;
+    font-weight: 400;
 }
 
 .custom_font {
     color: var(--main-font-color);
     font-size: 6.5rem;
     font-weight: 100;
-}
-
-.custom_font_secondary {
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin-right: -5px;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
-    line-height: .2;
-    color: var(--main-font-dark-gray);
 }
 
 .container {
@@ -286,13 +273,13 @@ nav .overlay ul {
     font-size: 2rem;
     font-weight: normal;
     letter-spacing: 0.6px;
-    line-height: 0.9;
+    line-height: 1;
 }
 
 .main_btn {
     font-size: 1.5rem;
     border: 2px solid var(--main-font-color);
-    padding: 0.3rem 2.3rem 0rem 2.3rem;
+    padding: 0.6rem 2.3rem 0.6rem 2.3rem;
     letter-spacing: 3px;
     margin: 0 auto;
     position: relative;
@@ -320,8 +307,8 @@ nav .overlay ul {
 }
 
 .store img {
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 78vh;
 }
 
 .slides img {
@@ -381,11 +368,21 @@ nav .overlay ul {
     grid-gap: 10px;
 }
 
-.image_group img {
+.image_group .picture_1,
+             .picture_2 {
     width: 100%;
     height: 30rem;
 }
 
+.picture_1 {
+    background: url("images/Kossovo1.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.picture_2 {
+    background: url("images/Kossovo2.jpg") center no-repeat;
+    background-size: cover;
+}
 /* ------------------------Section - element_1 */
 
 .element_1 {
@@ -437,9 +434,10 @@ footer h4 {
 footer h5 {
     width: 90%;
     margin: 0 auto;
-    line-height: 1;
+    line-height: 1.2;
     font-size: 2rem;
     font-weight: 300;
+    margin-bottom: 3vh;
 }
 
 footer p {
@@ -505,7 +503,7 @@ footer p {
     }
 
     .store img {
-        height: 70%;
+        height: 78vh;
     }
 
     .center {
