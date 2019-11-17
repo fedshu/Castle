@@ -37,12 +37,26 @@ slides[slideIndex-1].style.display = "block";
 }
 
 ymaps.ready(init);
+
 function init(){
     
   var myMap = new ymaps.Map("map", {
-
     center: [52.76560496, 25.12168606],
+    zoom: 11,
+  }, {
+    searchControlProvider: 'yandex#search'
+  });
 
-    zoom: 11
+  ymaps.geocode('Коссово', {
+    results: 1
+  }).then(function(res) {
+    let firstGeoObject = res.geoObjects.get(0);
+    let bounds = firstGeoObject.properties.get('boundedBy');
+
+    firstGeoObject.options.set('preset', 'islands#darkBlueDotIconWithCaption');
+    firstGeoObject.properties.set('iconCaption', firstGeoObject.getAddressLine());
+
+    myMap.geoObjects.add(firstGeoObject);
+
   });
 }
