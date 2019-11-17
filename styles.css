@@ -414,10 +414,11 @@ nav .overlay ul {
 footer {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     text-align: center;
     background-color: var(--main-footer-bg-color);
-    padding: 5rem 0;
+    padding-top: 5rem;
     font-size: 1.8rem;
     color: var(--main-white);
 }
@@ -442,6 +443,11 @@ footer h5 {
 
 footer p {
     color: #fff;
+}
+
+#map {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
 }
 
 @media screen and (min-width: 769px) {
@@ -504,6 +510,7 @@ footer p {
 
     .store img {
         height: 78vh;
+        width: 100vh;
     }
 
     .center {
@@ -579,6 +586,11 @@ footer p {
 
     footer {
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
 
+    #map {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
     }
 }
