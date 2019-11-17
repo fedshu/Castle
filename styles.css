@@ -47,7 +47,7 @@ a {
 
 .btn_info {
     font-size: 1.2rem;
-    padding: 0.7em 1rem 1rem 1rem;
+    padding: 0.7em 1rem 0.7rem 1rem;
     color: var(--main-font-color);
     border-bottom: 2px solid var(--main-font-color);
     margin: 2rem 0 4rem 0;
@@ -57,8 +57,6 @@ a {
     background-color: var(--main-font-color);
     color: var(--main-white);
 }
-
-
 
 .custom_font_secondary {
     width: 90%;
@@ -364,7 +362,7 @@ nav .overlay ul {
 
 .image_group {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
 }
 
@@ -503,7 +501,7 @@ footer p {
 
     .container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
     }
 
@@ -522,14 +520,15 @@ footer p {
 
     .add_padding_right {
         padding-right: 5rem;
+        width: 100%;
     }
 
     .first {
-        order: 1;
+        order: 2;
     }
 
     .second {
-        order: 2;
+        order: 1;
     }
 
     .btn_info {
