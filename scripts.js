@@ -35,3 +35,14 @@ function showSlides(n) {
   }
 slides[slideIndex-1].style.display = "block";
 }
+
+ymaps.ready(init);
+function init(){
+    
+  var myMap = new ymaps.Map("map", {
+
+    center: [52.76560496, 25.12168606],
+
+    zoom: 11
+  });
+}
