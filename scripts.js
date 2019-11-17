@@ -51,7 +51,6 @@ function init(){
     results: 1
   }).then(function(res) {
     let firstGeoObject = res.geoObjects.get(0);
-    let bounds = firstGeoObject.properties.get('boundedBy');
 
     firstGeoObject.options.set('preset', 'islands#darkBlueDotIconWithCaption');
     firstGeoObject.properties.set('iconCaption', firstGeoObject.getAddressLine());
